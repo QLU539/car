@@ -14,14 +14,12 @@ public class UserServiceImpl implements UserService {
 	@Autowired 
 	private UserDao userDao;
 
-	@Override
 	public Long insertUser(User user) {
 		User savedUser = userDao.save(user);
 		log.info(savedUser.toString());
 		return null;
 	}
 
-	@Override
 	public User ReadUser(Long id) {
 		User user = userDao.findOne(id);
 		return user;
@@ -29,7 +27,6 @@ public class UserServiceImpl implements UserService {
 
 	
 
-	@Override
 	public void DeleteUser(User user) {
 		userDao.delete(user);
 	}
