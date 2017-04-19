@@ -1,2 +1,2 @@
 # car
-交易
+spring boot lombok logback maven vlidate
